@@ -3,6 +3,7 @@
 - 通过本案例复习fs、path、querystring、http模块的用法
 - 通过本案例训练自己做项目的思考过程
 - 进一步复习art-template的用法
+- 复习git、github的命令
 
 ## 需求分析
 - 显示音乐列表
