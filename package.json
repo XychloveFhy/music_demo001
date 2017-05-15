@@ -1,0 +1,17 @@
+{
+  "name": "music",
+  "version": "1.0.0",
+  "description": "- 显示音乐列表\r - 添加音乐\r - 编辑音乐\r - 删除音乐",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "art-template": "^4.9.1",
+    "bootstrap": "^3.3.7",
+    "formidable": "^1.1.1"
+  }
+}

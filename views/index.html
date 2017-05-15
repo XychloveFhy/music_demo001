@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <title>Document</title>
+  <link rel="stylesheet" href="../assets/css/bootstrap.css">
+</head>
+
+<body>
+  <div class="container">
+    <div class="page-header">
+      <h1><a href="index.html">我的音乐</a> <small>首页</small></h1>
+    </div>
+    <a class="btn btn-success" href="/add">添加歌曲</a>
+    
+    <!--歌曲列表区域-->
+    <table class="table">
+      <!--歌曲列表标题区域-->
+      <thead>
+        <tr>
+          <th>编号</th>
+          <th>标题</th>
+          <th>歌手</th>
+          <th>音乐名称</th>
+          <th>海报</th>
+          <th>操作</th>
+        </tr>
+      </thead>
+      
+      <!--歌曲列表内容区域-->
+      <tbody>
+        {{each arr}}
+        <tr>
+          <td>{{$value.id}}</td>
+          <td>{{$value.title}}</td>
+          <td>{{$value.singer}}</td>
+          <td>{{$value.music}}</td>
+          <td>
+            <img src="../uploads/{{$value.poster}}" alt="">
+          </td>
+          <td>
+            <a href="/edit">修改</a>
+            <a href="/delete?id={{$value.id}}">删除</a>
+          </td>
+        </tr>
+        {{/each}}
+      </tbody>
+    </table>
+
+
+  </div>
+</body>
+
+</html>
